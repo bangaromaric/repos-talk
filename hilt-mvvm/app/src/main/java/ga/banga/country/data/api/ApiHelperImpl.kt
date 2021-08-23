@@ -9,7 +9,7 @@ class ApiHelperImpl @Inject constructor(private val apiService: ApiService) : Ap
   override suspend fun getCountriesInfo(returns: String): Response<CountriesInfo> =
     apiService.getCountriesInfo(returns)
 
-  override suspend fun getStates(country: String): Response<List<Provinces>> =
+  override suspend fun getStates(country: Map<String, String>): Response<Provinces> =
     apiService.getStates(country)
 
 }

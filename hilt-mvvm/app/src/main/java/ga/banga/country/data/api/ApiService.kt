@@ -17,6 +17,6 @@ interface ApiService {
   suspend fun getCountriesInfo(@Query("returns") returns: String): Response<CountriesInfo>
 
   @POST("states")
-  suspend fun getStates(@Body country: String): Response<List<Provinces>>
+  suspend fun getStates(@Body country: Map<String, String>): Response<Provinces>
 
 }

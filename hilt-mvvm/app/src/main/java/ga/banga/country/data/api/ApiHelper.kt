@@ -10,6 +10,6 @@ import retrofit2.Response
 interface ApiHelper {
 
   suspend fun getCountriesInfo(returns: String): Response<CountriesInfo>
-  suspend fun getStates(country: String): Response<List<Provinces>>
+  suspend fun getStates(country: Map<String, String>): Response<Provinces>
 
 }
