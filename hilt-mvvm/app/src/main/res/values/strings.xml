@@ -1,3 +1,12 @@
 <resources>
   <string name="app_name">MyGabon</string>
+  <string name="states_list_transition_name">states_list</string>
+  <string name="contry_card_transition_name">country_card</string>
+  <string name="desc_text_image">image de Libveville</string>
+  <string name="lib_capitale_libreville">Capitale: Libreville</string>
+  <string name="lib_devise">Devise:</string>
+  <string name="lib_code_dial">Code de numérotation:</string>
+  <string name="lib_btn_nos_provinces">Nos provinces</string>
+  <string name="lib_btn_une_autre_photo">Une autre photo</string>
+  <string name="desc_drapeau_du_gabon">Drapeau du Gabon</string>
 </resources>

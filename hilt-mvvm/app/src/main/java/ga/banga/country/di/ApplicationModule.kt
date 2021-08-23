@@ -1,7 +1,10 @@
 package ga.banga.country.di
 
 import android.content.Context
+import android.os.Build.VERSION.SDK_INT
 import coil.ImageLoader
+import coil.decode.GifDecoder
+import coil.decode.ImageDecoderDecoder
 import coil.decode.SvgDecoder
 import coil.request.ImageRequest
 import dagger.Module
@@ -18,7 +21,14 @@ import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
+import javax.inject.Qualifier
 import javax.inject.Singleton
+
+@Qualifier
+annotation class InCoilGif
+
+@Qualifier
+annotation class InCoilSvg
 
 @Module
 @InstallIn(SingletonComponent::class)
@@ -68,9 +78,22 @@ class ApplicationModule {
 
   @Provides
   @Singleton
+  @InCoilSvg
   fun provideImageLoader(@ApplicationContext mContext: Context) =
     ImageLoader.Builder(mContext).componentRegistry {
       add(SvgDecoder(mContext))
+    }.build()
+
+  @Provides
+  @Singleton
+  @InCoilGif
+  fun provideImageLoaderGif(@ApplicationContext mContext: Context) =
+    ImageLoader.Builder(mContext).componentRegistry {
+      if (SDK_INT >= 28) {
+        add(ImageDecoderDecoder(mContext))
+      } else {
+        add(GifDecoder())
+      }
     }.build()
 
   @Provides

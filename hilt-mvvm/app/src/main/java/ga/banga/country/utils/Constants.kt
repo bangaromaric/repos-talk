@@ -23,11 +23,14 @@
 
 package ga.banga.country.utils
 
+import ga.banga.country.R.drawable
+
 object Constants {
 
   // Application
   const val BASE_URL = "https://countriesnow.space/api/v0.1/countries/"
   const val GABON = "Gabon"
+  const val filter = "currency,flag,unicodeFlag,dialCode"
   val IMG_LBV_LIST = listOf(
     "https://media-cdn.tripadvisor.com/media/photo-s/09/25/0f/a7/gabon.jpg",
     "https://www.gabonreview.com/wp-content/uploads/2020/06/LBV-GABON.jpg",
@@ -37,6 +40,9 @@ object Constants {
     "https://www.libreville-aeroport.com/wp-content/uploads/2019/04/Park-Inn-by-Radisson-Libreville.jpg"
   )
 
-  val filter = "currency,flag,unicodeFlag,dialCode"
+  val DRAWABLE_GABON = listOf(
+    drawable.gabon1, drawable.gabon2, drawable.gabon3, drawable.gabon4,
+    drawable.gabon5, drawable.gabon6
+  )
 
 }
