@@ -16,13 +16,6 @@ Also fetching data from the network with an API via repository pattern.
 <img src="previews/Screenshot_1.png" width="23%"/>&emsp;
 <img src="previews/Screenshot_2.png" width="23%"/>&emsp;</br>
 
-## APK DEBUG
-<a href="debugApp/app-debug.apk"><img alt="APK" src="https://upload.wikimedia.org/wikipedia/commons/4/41/APK_format_icon_%282014-2019%29.png"/></a>
-
-
-
-
-
 ## Tech stack & Open-source libraries
 - Minimum SDK level 23
 - [Kotlin](https://kotlinlang.org/) based + [Coroutines](https://github.com/Kotlin/kotlinx.coroutines) .
