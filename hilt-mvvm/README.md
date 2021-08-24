@@ -13,8 +13,8 @@ Also fetching data from the network with an API via repository pattern.
 
 ## Screenshoots
 
-<img src="/previews/Screenshot_1.png" width="23%"/>&emsp;
-<img src="/previews/Screenshot_2.png" width="23%"/>&emsp;</br>
+<img src="previews/Screenshot_1.png" width="23%"/>&emsp;
+<img src="previews/Screenshot_2.png" width="23%"/>&emsp;</br>
 
 ## Tech stack & Open-source libraries
 - Minimum SDK level 23
