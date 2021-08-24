@@ -29,6 +29,7 @@ Also fetching data from the network with an API via repository pattern.
     - MVVM Architecture (Declarative View - ViewModel - Model)
     - Repository pattern
 - [Moshi](https://github.com/square/moshi/) - A JSON library for Kotlin.
+- [Coil](https://coil-kt.github.io/coil/) - An image loading library for Android backed by Kotlin Coroutines.
 - [Retrofit2 & OkHttp3](https://github.com/square/retrofit) - construct the REST APIs and paging network data.
 - Material Design & Animations
 - [Timber](https://github.com/JakeWharton/timber) - logging.
