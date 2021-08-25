@@ -22,7 +22,6 @@ import ga.banga.country.R.string
 import ga.banga.country.data.models.country.Data
 import ga.banga.country.data.models.states.State
 import ga.banga.country.databinding.HomeFragmentBinding
-import ga.banga.country.di.InCoilGif
 import ga.banga.country.di.InCoilSvg
 import ga.banga.country.utils.Constants.DRAWABLE_GABON
 import ga.banga.country.utils.Constants.GABON
@@ -52,9 +51,9 @@ class HomeFragment : Fragment() {
   @InCoilSvg
   @Inject lateinit var imageLoader: ImageLoader
 
-  @InCoilGif
-  @Inject lateinit var imageLoaderGif: ImageLoader
-  private lateinit var binding: HomeFragmentBinding
+//  @InCoilGif
+//  @Inject lateinit var imageLoaderGif: ImageLoader
+private lateinit var binding: HomeFragmentBinding
   private val countriesViewModel: HomeViewModel by viewModels()
 
   override fun onCreateView(
