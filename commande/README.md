@@ -20,6 +20,7 @@ This project focuses in Dependency injection, Spring Data and Thymleaf.
 - [Thymeleaf](https://www.thymeleaf.org/) - Thymeleaf is a modern server-side Java template engine for both web and standalone environments.
 - [Spring Data JPA](https://spring.io/projects/spring-data-jpa) - Makes it easy to easily implement JPA based repositories.
 - [Materializecss](https://materializecss.com/getting-started.html) - Learn how to easily start using Materialize in your website.
+- MariaDB - 10.3.31+
 - PWA
 - JavaScript
 
